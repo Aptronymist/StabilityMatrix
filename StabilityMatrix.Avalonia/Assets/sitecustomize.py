@@ -23,7 +23,7 @@ def send_apc(msg: str):
 
 def send_apc_input(prompt: str):
     """Apc message for input() prompt."""
-    send_apc('{"type":"input","data":"' + str(prompt) + '"}')
+    send_apc('{"type":"input","data":"' + prompt + '"}')
 
 
 def audit(event: str, *args):
